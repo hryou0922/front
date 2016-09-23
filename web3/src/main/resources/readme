@@ -1,0 +1,12 @@
+WebContent
+component：组件
+	结构：组件名称-版本-关键jquery
+
+	jstree: 树型结构
+		官网/学习网站：
+		http://localhost/springvelocity/jstree/index.html -- 待定
+	jquery-validation: 输入验证
+		http://localhost:8080/springvelocity/jqueryValidation/1.14.0/demo/index.html -- 待定
+	jquery-ajax：ajax
+		
+		
