@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<jsp:include page="../common/common.jsp"></jsp:include>
+<jsp:include page="../../common/common.jsp"></jsp:include>
 <style type="text/css"> 
 </style>
 </head>

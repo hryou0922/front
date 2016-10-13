@@ -1,4 +1,4 @@
-package study.hry.web.layout;
+package study.hry.web.basic;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

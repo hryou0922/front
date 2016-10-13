@@ -7,59 +7,10 @@
 </head>
 <body>
 
-	<div class="container">
-		<div class="row">
-			ajax 请求
-		</div>
-		<div class="row">
-			<div class="col-md-2">
-				<button type="button" class="btn btn-default" id="ajax-load">ajax.load</button>
-			</div>
-			<div class="col-md-4" id="ajax-load-content">待替换字符</div>
-		</div>
-		<div class="row">
-			<div class="col-md-2">
-				<button type="button" class="btn btn-default" id="ajax-get">ajax.get</button>
-			</div>
-			<div class="col-md-4" id="ajax-get-content">待替换字符</div>
-		</div>
-	</div>
+--- basic - layout <br/>
 
-</body>
+--- basic - navbar <br/>
 
-<script>
-$().ready(function() {
-	// ajax-load
-	$("#ajax-load").click(function(){
-		$("#ajax-load-content").load(
-			"/web/CommonAjax?type=1", 
-			{a:1,b:2},
-			function(responseTxt, statusTxt, xhr){
-				if(statusTxt == "success"){
-					alert("External content loaded successfully!");
-				}
-				if(statusTxt == "error"){
-				    alert("Error: " + xhr.status + ": " + xhr.statusText);
-				}
-    		}
-		);
-	});
-	// ajax-get
-	$("#ajax-get").click(function(){
-		$("#ajax-get-content").load(
-			"/web/CommonAjax?type=2", 
-			{a:1,b:2},
-			function(responseTxt, statusTxt, xhr){
-				if(statusTxt == "success"){
-				//	alert("External content loaded successfully!");
-				}
-				if(statusTxt == "error"){
-				    alert("Error: " + xhr.status + ": " + xhr.statusText);
-				}
-    		}
-		);
-	});
-});
-</script>
+--- ajax <br/>
 	
 </html>

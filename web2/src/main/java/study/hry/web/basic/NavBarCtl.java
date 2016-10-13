@@ -1,4 +1,4 @@
-package study.hry.web.navbar;
+package study.hry.web.basic;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping(value="navbar") 
 public class NavBarCtl {
+	
+	private final String BASE = "";
 	
 	@RequestMapping(value="standard_navigation_bar")
 	public String standard_navigation_bar(){
