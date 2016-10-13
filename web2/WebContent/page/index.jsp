@@ -7,10 +7,10 @@
 </head>
 <body>
 
---- basic - layout <br/>
+<a href="<%= request.getContextPath() %>/mvc/layout/index">basic - layout</a> <br/>
+<a href="<%= request.getContextPath() %>/mvc/navbar/index">basic - navbar</a> <br/>
 
---- basic - navbar <br/>
 
---- ajax <br/>
-	
+<a href="<%= request.getContextPath() %>/mvc/pagination/index">TwbsPagination</a> <br/>
+ 
 </html>

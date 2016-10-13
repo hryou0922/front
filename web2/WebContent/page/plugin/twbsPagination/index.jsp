@@ -10,42 +10,65 @@
 </head>
 <body>
 	<div class="container">
-		<!-- 
 		<div class="row">
-			The Bootstrap grid system has four classes, (即col-*-*里第一个*的值)
-			○ xs (for phones)
-			○ sm (for tablets)
-			○ md (for desktops)
-			lg (for larger desktops)
-		</div>
-		 -->
-		<div class="row bd">
-			<div class="col-md-1">.col-md-1</div>
-			<div class="col-md-1">.col-md-1</div>
-			<div class="col-md-1">.col-md-1</div>
-			<div class="col-md-1">.col-md-1</div>
-			<div class="col-md-1">.col-md-1</div>
-			<div class="col-md-1">.col-md-1</div>
-			<div class="col-md-1">.col-md-1</div>
-			<div class="col-md-1">.col-md-1</div>
-			<div class="col-md-1">.col-md-1</div>
-			<div class="col-md-1">.col-md-1</div>
-			<div class="col-md-1">.col-md-1</div>
-			<div class="col-md-1">.col-md-1</div>
+			<div >第一个demo</div>
+			<div id="page-content"></div>
+			<div id="pagination-demo"></div>
 		</div>
 		<div class="row">
-			<div class="col-md-8">.col-md-8</div>
-			<div class="col-md-4">.col-md-4</div>
+			<div >Dynamic total pages number</div>
+			<div id="selector"></div>
+			<input type="button" id="dynamic_btn" value="change"></div>			 
 		</div>
 		<div class="row">
-			<div class="col-md-4">.col-md-4</div>
-			<div class="col-md-4">.col-md-4</div>
-			<div class="col-md-4">.col-md-4</div>
+			<div >Synchronized pagination elements</div>
+			<div id="page-content2"></div>
+			<div id="pagination-demo2"></div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">.col-md-6</div>
-			<div class="col-md-6">.col-md-6</div>
+			<div >Alternative style pagination (with start and end page numbers)</div>
+			<div id="page-content3"></div>
+			<div id="pagination-demo3"></div>
 		</div>
 	</div>
 </body>
+
+
+<script>
+$().ready(function() {
+	// demo
+    $('#pagination-demo').twbsPagination({
+        totalPages: 35,
+        visiblePages: 7,
+        onPageClick: function (event, page) {
+            $('#page-content').text('Page ' + page);
+        }
+    });
+	
+	// Dynamic total pages number
+    var $pagination = $('#selector');
+    var defaultOpts = {
+        totalPages: 3
+    };
+    $pagination.twbsPagination(defaultOpts);
+    
+    $("#dynamic_btn").click(function(){
+    	$.ajax({
+            url : "<%=request.getContextPath() %>/mvc/pagination/dynamicTotalPages",
+            dataType : "json",
+            success: function (data) {
+                var totalPages = data.newTotalPages;
+                var currentPage = $pagination.twbsPagination('getCurrentPage');
+                $pagination.twbsPagination('destroy');
+                $pagination.twbsPagination($.extend({}, defaultOpts, {
+                    startPage: currentPage,
+                    totalPages: totalPages
+                }));
+            }
+        });
+    });
+    
+});
+</script>
+
 </html>

@@ -11,7 +11,7 @@ public class IndexController {
 	}
 	
 	/**
-	 * http://localhost/web3/mvc/index
+	 * http://localhost/web2/mvc/index
 	 * @return
 	 */
 	@RequestMapping(value="index")

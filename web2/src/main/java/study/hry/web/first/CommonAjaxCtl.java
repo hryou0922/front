@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping(value="ajax") 
 public class CommonAjaxCtl {
-
+	private final String BASE = "ajax";
+	
 	public CommonAjaxCtl(){
 		System.out.println("CommonAjaxCtl-----");
 	}
@@ -24,6 +25,6 @@ public class CommonAjaxCtl {
 	 */
 	@RequestMapping(value="index")
 	public String index(){
-		return "ajax/ajax";
+		return BASE + "/ajax";
 	}
 }

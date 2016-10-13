@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping(value="layout") 
 public class LayoutCtl {
+	private final String BASE = "basic/basic_layout";
 	
 	@RequestMapping(value="ajaxLoad")
 	@ResponseBody
@@ -20,6 +21,6 @@ public class LayoutCtl {
 	 */
 	@RequestMapping(value="index")
 	public String index(){
-		return "basic_layout/index";
+		return BASE + "/index";
 	}
 }
