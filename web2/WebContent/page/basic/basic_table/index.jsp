@@ -88,7 +88,6 @@
 							<td>the Bird</td>
 							<td>@twitter</td>
 						</tr>
-					</thead>
 					</tbody>
 				</table>
 			</div>
