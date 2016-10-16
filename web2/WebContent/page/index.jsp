@@ -13,5 +13,7 @@
 
 <a href="<%= request.getContextPath() %>/mvc/pagination/index">TwbsPagination</a> <br/>
 <a href="<%= request.getContextPath() %>/mvc/modal/index">Modal</a> <br/>
+
+<a href="<%= request.getContextPath() %>/mvc/bootbox/index">bootbox</a> <br/>
  
 </html>

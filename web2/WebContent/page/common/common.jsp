@@ -14,3 +14,5 @@
 <!-- TwbsPagination -->
 <script src="<%=request.getContextPath() %>/component/twbspagination/1.3.1/jquery.twbsPagination.js"></script>
 
+<!-- bootbox -->
+<script src="<%=request.getContextPath() %>/component/bootboxjs/4.4.0/bootbox.js"></script>
