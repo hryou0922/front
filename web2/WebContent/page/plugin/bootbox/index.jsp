@@ -44,6 +44,11 @@
 			<button type="button" id="custom_1" class="btn btn-primary example-button">Custom dialog as "loading" overlay</button>
 			<button type="button" id="custom_2" class="btn btn-primary example-button">Custom dialog, using init  </button>
 		</div>
+		<div class="row">
+			<div>alert.js</div>
+			<a href="<%= request.getContextPath() %>/mvc/bootbox/alert" >alert js</a>
+			
+		</div>
 	</div>
 
 
