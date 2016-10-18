@@ -37,6 +37,11 @@
 			<div>Modal Events</div>
 			<button type="button" class="btn btn-primary" id="modalEventBtn">Modal Events</button>
 		</div>
+		
+		<div class="row">
+			<div>Dynamic Modal Content</div>
+			<button type="button" class="btn btn-primary" id="dynamicModalBtn">Dynamic Modal Content</button>
+		</div>
 	</div>
 
 
@@ -78,6 +83,13 @@
 		</div>
 	</div>
 
+	<!--Static Backdrop -->
+	<div class="modal fade" id="dynamicModal" role="dialog">
+		<div class="modal-dialog" id="dynamicModalDialog">
+ 			
+		</div>
+	</div>
+	
 </body>
 
 
@@ -98,6 +110,17 @@
 			$("#myModal").on('show.bs.modal', function() {
 				alert('The modal is about to be shown.');
 			});
+		});
+		
+		
+		// 隐藏时清空modal
+		$('#dynamicModal').on('hidden.bs.modal', function (e) {
+	  		$('#dynamicModalDialog').empty();
+		})
+		
+		$("#dynamicModalBtn").click(function() {
+			$("#dynamicModal").modal("show");
+			$('#dynamicModalDialog').load('<%= request.getContextPath() %>/mvc/modal/dynamicContent');
 		});
 
 	});

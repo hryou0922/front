@@ -2,7 +2,6 @@ package study.hry.web.plugin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(value="modal") 
@@ -15,9 +14,8 @@ public class ModalCtl {
 	}
 	
 	
-	@RequestMapping(value="dynamicTotalPages")
-	@ResponseBody
+	@RequestMapping(value="dynamicContent")
 	public String dynamicTotalPagesNumber(){
-		return "{\"newTotalPages\":5}";
+		return BASE + "/dynamicModal";
 	}
 }

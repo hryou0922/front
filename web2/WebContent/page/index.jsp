@@ -13,6 +13,8 @@
 <a href="<%= request.getContextPath() %>/mvc/form/index">basic - form</a> <br/>
 
 
+<a href="<%= request.getContextPath() %>/mvc/ajax/index">ajax</a> <br/>
+
 <a href="<%= request.getContextPath() %>/mvc/pagination/index">TwbsPagination</a> <br/>
 <a href="<%= request.getContextPath() %>/mvc/modal/index">Modal</a> <br/>
 
