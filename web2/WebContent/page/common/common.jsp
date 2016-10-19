@@ -16,3 +16,8 @@
 
 <!-- bootbox -->
 <script src="<%=request.getContextPath() %>/component/bootboxjs/4.4.0/bootbox.js"></script>
+
+<!-- jquery validation -->
+<script src="<%=request.getContextPath() %>/component/jquery-validation/1.15.0/jquery.validate.js"></script>
+<script src="<%=request.getContextPath() %>/component/jquery-validation/1.15.0/additional-methods.js"></script>
+<script src="<%=request.getContextPath() %>/component/jquery-validation/1.15.0/messages_zh.js"></script>
