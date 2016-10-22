@@ -16,5 +16,10 @@ public class MenuCtl {
 	@RequestMapping(value="dropdown")
 	public String dropdown(){
 		return BASE + "/dropdown";
+	}
+	
+	@RequestMapping(value="tab")
+	public String tab(){
+		return BASE + "/tab";
 	} 
 }

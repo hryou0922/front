@@ -28,6 +28,14 @@
 			</div>
 			<br />
 		</div>
+		
+		<div class="row">
+			<p>The Alert Plugin Classes; Close Alerts Via JavaScript; Alert Events</p>
+			<button id="showAlert" >show alert</button>
+			<div id="showAlertMsg" class="alert alert-danger hidden ">
+				<strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+			</div>
+		</div>
  
 	</div>
 </body>
@@ -43,6 +51,23 @@
 	    $("#myAlert").on('close.bs.alert', function(){
 	        alert('The alert message is about to be closed.');
 	    });
+	    
+	    
+ 		$("#showAlert").click(function(){
+ 			$("#showAlertMsg").removeClass("hidden");
+ 			
+ 			var dialog = bootbox.dialog({
+ 			//    title: 'A custom dialog with init',
+ 			    message: $("#showAlertMsg")
+ 			});
+ 			dialog.init(function(){
+ 			    setTimeout(function(){
+ 			        dialog.find('.bootbox-body').html('I was loaded after the dialog was shown!');
+ 			    }, 1000); 
+ 			});
+ 		});
+ 		
+
  
 	});
 </script>

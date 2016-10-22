@@ -12,6 +12,7 @@
 <a href="<%= request.getContextPath() %>/mvc/table/index">basic - table</a> <br/>
 <a href="<%= request.getContextPath() %>/mvc/form/index">basic - form</a> <br/>
 <a href="<%= request.getContextPath() %>/mvc/menu/index">basic - menu</a> <br/>
+<a href="<%= request.getContextPath() %>/mvc/btn/index">basic - button</a> <br/>
 
 <a href="<%= request.getContextPath() %>/mvc/ajax/index">ajax</a> <br/>
 
