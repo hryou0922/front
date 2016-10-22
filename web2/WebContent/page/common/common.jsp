@@ -21,3 +21,7 @@
 <script src="<%=request.getContextPath() %>/component/jquery-validation/1.15.0/jquery.validate.js"></script>
 <script src="<%=request.getContextPath() %>/component/jquery-validation/1.15.0/additional-methods.js"></script>
 <script src="<%=request.getContextPath() %>/component/jquery-validation/1.15.0/messages_zh.js"></script>
+
+<!-- js tree -->
+<script src="<%=request.getContextPath() %>/component/jstree/3.3.2/jstree.js"></script>
+<link rel="stylesheet" href="<%=request.getContextPath() %>/component/jstree/3.3.2/themes/default/style.css">
