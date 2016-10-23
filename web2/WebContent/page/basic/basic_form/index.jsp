@@ -10,6 +10,10 @@
 <body>
 	<div class="container">
 		<div class="row">
+			<div>其他相关示例</div>
+			<div><a href="<%= request.getContextPath() %>/mvc/form/form_query_value" >form get value</a></div>
+		</div>
+		<div class="row">
 			<div>基本实例</div>
 			<form role="form">
 

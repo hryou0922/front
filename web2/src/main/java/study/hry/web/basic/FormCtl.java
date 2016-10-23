@@ -12,4 +12,9 @@ public class FormCtl {
 	public String index(){
 		return BASE + "/index";
 	}
+	
+	@RequestMapping(value="form_query_value")
+	public String form_query_value(){
+		return BASE + "/form_query_value";
+	}
 }
