@@ -35,6 +35,7 @@
 			<div>JSTree Event: select change</div>
 			<div id="jstree_3"></div>
 			<button type="button" id="getSelectNodeIdBtn" >Get Select node id</button>
+			<button type="button" id="isRootNodeBtn" >当前节点是不是根节点</button>
 		</div>
 		<hr />
 		<div class="row">
@@ -86,8 +87,8 @@ $().ready(function() {
     $('#jstree_3')
 		.on("changed.jstree", function (e, data) {
 			if(data.selected.length) {
-				alert('The selected node text is: ' + data.instance.get_node(data.selected[0]).text);
-				alert('The selected node id is: ' + data.instance.get_node(data.selected[0]).id);
+				console.log('The selected node text is: ' + data.instance.get_node(data.selected[0]).text);
+				console.log('The selected node id is: ' + data.instance.get_node(data.selected[0]).id);
 			}
 		})
     	.jstree({
@@ -110,6 +111,15 @@ $().ready(function() {
 			id = id[0];
 			alert(id);
  		}
+    });
+    $("#isRootNodeBtn").click(function(){
+		var ref = $('#jstree_3').jstree(true);
+		id = ref.get_selected();
+		if(ref.get_parent (id)=="#"){
+			console.log("是根节点");		
+		}else{
+			console.log("不是根节点");		
+		}
     });
     
 });
