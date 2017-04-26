@@ -58,12 +58,6 @@
 	</dependency>
 	
 	<!-- logger jar end --> 
- 	<!-- spring web begin  -->
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-webmvc</artifactId>
-	</dependency>
-	<!-- spring web end  -->
 	
 	<!-- spring core container begin  -->	
 	<dependency>

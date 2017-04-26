@@ -1,0 +1,15 @@
+- 登入首页： http://localhost:8080/web2/mvc/index
+- Basic：基础表单
+  - layout：
+  - navbar：
+  - table：table
+  - form：表单
+  - menu
+  - button
+- ajax：ajax
+- TwbsPagination：分页插件
+- Modal： Modal表单
+- Jquery Validation ： jquery表单验证
+- bootbox：提示框
+- jstree：树操作
+- clipboard.js： 轻量级的实现复制文本到剪贴板功能的JavaScript插件
