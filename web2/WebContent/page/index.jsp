@@ -22,6 +22,6 @@
 <a href="<%= request.getContextPath() %>/mvc/jqueryValidation/index">jquery Validation</a> <br/>
 <a href="<%= request.getContextPath() %>/mvc/bootbox/index">bootbox</a> <br/>
 <a href="<%= request.getContextPath() %>/mvc/jstree/index">jstree</a> <br/>
-
+<a href="<%= request.getContextPath() %>/mvc/clipboard/index">clipboard</a> <br/>
  
 </html>
